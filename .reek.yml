@@ -1,0 +1,26 @@
+detectors:
+  InstanceVariableAssumption:
+    enabled: false
+  IrresponsibleModule:
+    enabled: false
+  DuplicateMethodCall:
+    max_calls: 2
+  NestedIterators:
+    max_allowed_nesting: 2
+  TooManyStatements:
+    max_statements: 8
+  UncommunicativeVariableName:
+    accept:
+      - h
+      - k
+      - v
+      - i
+      - j
+  LongParameterList:
+    max_params: 5
+  InstanceVariableAssumption:
+    enabled: false
+  FeatureEnvy:
+    enabled: false
+  MissingSafeMethod:
+    enabled: false

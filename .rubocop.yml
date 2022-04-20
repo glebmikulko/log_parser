@@ -1,0 +1,42 @@
+AllCops:
+  NewCops: enable
+  Exclude:
+    - "bin/**/*"
+    - "Gemfile"
+    - "test/**/*"
+  TargetRubyVersion: 3.1.2
+
+Style/Documentation:
+  Enabled: false
+
+Style/NestedParenthesizedCalls:
+  Exclude:
+    - "spec/**/*"
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: table
+
+Layout/LineLength:
+  Max: 120
+
+Metrics/AbcSize:
+  Max: 30
+
+Metrics/MethodLength:
+  Max: 25
+
+Lint/MissingSuper:
+  Exclude:
+    - 'lib/data_structures/**/*'
+
+Metrics/BlockLength:
+  IgnoredMethods: ["describe", "context"]
